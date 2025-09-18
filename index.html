@@ -25,7 +25,16 @@
       margin-top: 30px;
       text-align: center;
     }
-    a {
+    /* Regular links (like Wikipedia) */
+    .text-link {
+      color: #007acc;
+      text-decoration: underline;
+    }
+    .text-link:hover {
+      color: #005fa3;
+    }
+    /* PDF button styles */
+    .pdf-button {
       display: inline-block;
       margin-top: 20px;
       padding: 12px 24px;
@@ -35,7 +44,7 @@
       border-radius: 8px;
       font-weight: bold;
     }
-    a:hover {
+    .pdf-button:hover {
       background: #005fa3;
     }
   </style>
@@ -45,7 +54,7 @@
 
   <div>
     <p>
-      <a href="https://en.wikipedia.org/wiki/Goodbye,_My_Brother" target="_blank">
+      <a href="https://en.wikipedia.org/wiki/Goodbye,_My_Brother" target="_blank" class="text-link">
         "Goodbye, My Brother"
       </a> is a short story by John Cheever, first published in 
       <em>The New Yorker</em> (August 25, 1951), and collected in 
@@ -56,7 +65,7 @@
 
   <div class="card">
     <h2>Read the Story</h2>
-    <a href="Goodbye-My-Brother-1trovbu.pdf" target="_blank">Open PDF</a>
+    <a href="Goodbye-My-Brother-1trovbu.pdf" target="_blank" class="pdf-button">Open PDF</a>
   </div>
 </body>
 </html>
